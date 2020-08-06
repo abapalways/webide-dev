@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script 
+		src = "https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+		data-sap-ui-libs="sap.m"
+		data-sap-ui-theme="sap_bluecrystal"
+		>
+			
+		</script>
+		
+		<script>
+			var oField = new sap.m.Input("test1");
+			oField.placeAt("content1");
+			var oButton = new sap.m.Button("test2", {
+				text: 'Click Me'
+			});
+						oButton.placeAt("content2");
+		</script>
+	</head>
+	<body class="sapUiBody">
+		<div id = "content1"></div>
+			<div id = "content2"></div>
+		
+	</body>
+</html>
