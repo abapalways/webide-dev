@@ -13,7 +13,11 @@
 			var oField = new sap.m.Input("test1");
 			oField.placeAt("content1");
 			var oButton = new sap.m.Button("test2", {
-				text: 'Click Me'
+				text: 'Click Me',
+				press: function(){
+					var oValue = sap.ui.getCore().byId("test1");
+					alert(oValue.getValue());
+				}
 			});
 						oButton.placeAt("content2");
 		</script>
